@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
         public void init(){
             wd=new ChromeDriver();
             wd.manage().window().maximize();
-            wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             wd.navigate().to("https://ilcarro.xyz/");
             userHelper = new UserHelper(wd);
         }
